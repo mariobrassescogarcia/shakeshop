@@ -18,7 +18,7 @@ class Ticket
 
 #Create a function where we can add milkshakes to tickets
 	def add_milkshake(milkshake)
-		@milshakes.push(milkshake)
+		@milkshakes.push(milkshake)
 	end
 
 #Create a function where we sum milkshakes' prices to get the total price
@@ -27,7 +27,7 @@ class Ticket
 		price_ticket = @price
 		#Add each milkshake's price
 		@milkshakes.each do |milkshake|
-			price_ticket += milkshake.price
+			price_ticket += milkshake.price_milkshake
 		end
 		#Make the function return the price
 		price_ticket
@@ -43,7 +43,7 @@ class Milkshake
 	attr_reader :ingredients, :price
 	def initialize
 		@ingredients = [ ]
-		@price = 3
+		@price = 4
 	end
 
 	def add_ingredient(ingredient)
@@ -84,7 +84,7 @@ chocolate = Ingredient.new("chocolate", 1)
 
 mario_milkshake = Milkshake.new
 banana = Ingredient.new("banana", 2)
-coco = Ingredient.new("coco", 3)
+coco = Ingredient.new("coco", 2)
 mario_milkshake.add_ingredient(banana)
 mario_milkshake.add_ingredient(coco)
 
@@ -95,7 +95,10 @@ spinach = Ingredient.new("spinach", 1)
 apple = Ingredient.new("apple", 1)
 marta_milkshake.add_ingredient(avocado)
 marta_milkshake.add_ingredient(spinach)
+marta_milkshake.add_ingredient(apple)
 
+
+puts mario_milkshake.price_milkshake
 
 
 #Add both milkshakes to the new ticket
@@ -104,7 +107,7 @@ ticket1.add_milkshake(mario_milkshake)
 ticket1.add_milkshake(marta_milkshake)
 
 #Ask the Ticket class for the price value
-ticket1.price_ticket
+puts ticket1.price_ticket
 
 
 
