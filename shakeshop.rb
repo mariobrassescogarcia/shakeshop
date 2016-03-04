@@ -9,4 +9,9 @@ class Milkshake
 end
 
 
-milkshake_mario = Milkshake.new("coco", 7)
+class Ingredient
+	def initialize(name, price)
+		@name = name
+		@price = price
+	end
+end
