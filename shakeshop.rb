@@ -7,7 +7,7 @@
 # -Hint: Model this class in the same way we created the milkshake class, and call the price_of_milkshake method to return a milkshakes total price when checking out.
 
 
-class Shop
+class Ticket
 	def initialize
 		@milkshakes = [ ]
 		@price = 0
@@ -77,8 +77,6 @@ end
 
 chocolate = Ingredient.new("chocolate", 1)
 
-
-
 mario_milkshake = Milkshake.new
 banana = Ingredient.new("banana", 2)
 coco = Ingredient.new("coco", 3)
@@ -92,6 +90,12 @@ spinach = Ingredient.new("spinach", 1)
 apple = Ingredient.new("apple", 1)
 marta_milkshake.add_ingredient(avocado)
 marta_milkshake.add_ingredient(spinach)
+
+
+ticket1 = Ticket.new
+ticket1.add_milkshake(mario_milkshake)
+ticket1.add_milkshake(marta_milkshake)
+
 
 
 
