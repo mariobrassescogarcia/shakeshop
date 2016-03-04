@@ -1,3 +1,23 @@
+#Exercise explanation:
+
+#Create the shake shop class, containing:
+# -An empty list where we can add milkshakes
+# -A method to add milkshakes to this list
+# -A method to checkout all of the milkshakes in our list
+# -Hint: Model this class in the same way we created the milkshake class, and call the price_of_milkshake method to return a milkshakes total price when checking out.
+
+
+class Shop
+	def initialize
+		@milkshakes = [ ]
+		@price = 0
+	end
+end
+
+
+
+
+
 
 
 class Milkshake
