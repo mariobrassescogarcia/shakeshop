@@ -15,3 +15,9 @@ class Ingredient
 		@price = price
 	end
 end
+
+
+
+banana = Ingredient.new("banana", 2)
+coco = Ingredient.new("coco", 3)
+chocolate = Ingredient.new("chocolate", 1)
