@@ -1,11 +1,15 @@
 
-#Create milkshake class
 
 class Milkshake
-	def initialize(flavor, price)
-		@flavor = [ ]
+	def initialize
+		@ingredients = [ ]
 		@price = 3
 	end
+
+	def add_ingredient(ingredient)
+		@ingredients.push(ingredient)
+	end
+
 end
 
 
