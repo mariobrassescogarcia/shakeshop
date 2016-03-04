@@ -3,8 +3,8 @@
 
 class Milkshake
 	def initialize(flavor, price)
-		@flavor = flavor
-		@price = price
+		@flavor = [ ]
+		@price = 3
 	end
 end
 
