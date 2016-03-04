@@ -4,8 +4,11 @@
 # -An empty list where we can add milkshakes
 # -A method to add milkshakes to this list
 # -A method to checkout all of the milkshakes in our list
-# -Hint: Model this class in the same way we created the milkshake class, and call the price_of_milkshake method to return a milkshakes total price when checking out.
+# -Hint: Model this class in the same way we created the milkshake class, and call the price_milkshake method to return a milkshakes total price when checking out.
 
+
+
+#Create a Ticket variable that will contain the list of milkshakes and the total price
 
 class Ticket
 	def initialize
@@ -13,11 +16,12 @@ class Ticket
 		@price = 0
 	end
 
-
+#Create a function where we can add milkshakes to tickets
 	def add_milkshake(milkshake)
 		@milshakes.push(milkshake)
 	end
 
+#Create a function where we sum milkshakes' prices to get the total price
 	def price_ticket
 		#The count starts with the base price
 		price_ticket = @price
@@ -36,6 +40,7 @@ end
 
 
 class Milkshake
+	attr_reader :ingredients, :price
 	def initialize
 		@ingredients = [ ]
 		@price = 3
@@ -92,11 +97,14 @@ marta_milkshake.add_ingredient(avocado)
 marta_milkshake.add_ingredient(spinach)
 
 
+
+#Add both milkshakes to the new ticket
 ticket1 = Ticket.new
 ticket1.add_milkshake(mario_milkshake)
 ticket1.add_milkshake(marta_milkshake)
 
-
+#Ask the Ticket class for the price value
+ticket1.price_ticket
 
 
 
