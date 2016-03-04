@@ -84,3 +84,15 @@ banana = Ingredient.new("banana", 2)
 coco = Ingredient.new("coco", 3)
 mario_milkshake.add_ingredient(banana)
 mario_milkshake.add_ingredient(coco)
+
+
+marta_milkshake = Milkshake.new
+avocado = Ingredient.new("avocado", 1)
+spinach = Ingredient.new("spinach", 1)
+apple = Ingredient.new("apple", 1)
+marta_milkshake.add_ingredient(avocado)
+marta_milkshake.add_ingredient(spinach)
+
+
+
+
