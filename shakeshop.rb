@@ -12,9 +12,24 @@ class Shop
 		@milkshakes = [ ]
 		@price = 0
 	end
+
+
+	def add_milkshake(milkshake)
+		@milshakes.push(milkshake)
+	end
+
+	def price_ticket
+		#The count starts with the base price
+		price_ticket = @price
+		#Add each milkshake's price
+		@milkshakes.each do |milkshake|
+			price_ticket += milkshake.price
+		end
+		#Make the function return the price
+		price_ticket
+	end
+
 end
-
-
 
 
 
