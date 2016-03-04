@@ -80,7 +80,7 @@ end
 
 
 
-chocolate = Ingredient.new("chocolate", 1)
+#Create two milkshakes with different ingredients
 
 mario_milkshake = Milkshake.new
 banana = Ingredient.new("banana", 2)
